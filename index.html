@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vòng xoay may mắn</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
+    <link rel="icon" type="image/png" href="/images/logo.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/logo.png" sizes="16x16" />
+    <link rel="shortcut icon" href="/images/logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="top_page_rotat">
+      <!-- phan quay xo so -->
+      <div class="container container_rotate">
+        <div class="title_vxmm_t7">
+          <p class="title_vxmm_t7_first">HÀNH TRÌNH 6 NĂM TÔ SẮC VẺ ĐẸP VIỆT</p>
+          <p class="title_vxmm_t7_second">
+            Cảm ơn vì một chặng đường đồng hành. Viện thẩm mỹ DIVA gửi trao quà
+            tặng đặc biệt tới tất cả khách hàng!
+          </p>
+        </div>
+        <div class="right_top_colum">
+          <div class="content-mosdal nam-vx">
+            <div class="top_section">
+              <div class="top_colum">
+                <div class="turntable-bg">
+                  <div class="pointer" onclick="showPopup()">
+                    <img src="./images/btn-arrow.png" alt="pointer" />
+                  </div>
+                  <div class="rotate">
+                    <img
+                      id="rotate"
+                      src="./images/rotate.png"
+                      alt="turntable"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- dieu kien ap dung -->
+      <div class="mc_vxmm_require">
+        <div class="mc_req_container">
+          <div class="mc_vxmm_require_contain">
+            <div class="mc_vxmm_t7_require_title">Điều kiện áp dụng</div>
+            <div class="mc_vxmm_require_row">
+              <div class="mc_vxmm_require_content">
+                <div class="im-icc">
+                  <img src="./images/calendar.png" alt="Icc" />
+                </div>
+                Thời gian từ 11/07 đến 31/07/2022
+              </div>
+              <div class="mc_vxmm_require_content">
+                <div class="im-icc">
+                  <img src="./images/gif.png" alt="Icc" />
+                </div>
+                Quà tặng không có giá trị quy đổi thành tiền mặt
+              </div>
+              <div class="mc_vxmm_require_content">
+                <div class="im-icc">
+                  <img src="./images/trapping.png" alt="Icc" />
+                </div>
+                Dành cho tất cả các đơn hàng mỹ phẩm trên 3 triệu
+              </div>
+              <div class="mc_vxmm_require_content">
+                <div class="im-icc">
+                  <img src="./images/extra-info.png" alt="Icc" />
+                </div>
+                Áp dụng tại tất cả chi nhánh Viện thẩm mỹ DIVA trên toàn quốc
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- popup nhap thong tin -->
+      <div class="modal_vxmm" id="wrapper_popup">
+        <div class="box-shadow-mc bg-vxmm">
+          <div class="text_center-form">
+            <div
+              class="close-popup-vx"
+              id="close-form-10"
+              onclick="hidePopup()"
+            >
+              ✕
+            </div>
+            <p>Chúc mừng bạn đã trúng thưởng</p>
+            <h3 class="title-form-dk">Serum mụn 666K</h3>
+            <form name="formLpdNoelTop_10" id="my-form">
+              <div class="fullname">
+                <p class="title-in"></p>
+                <input
+                  class="style-inp"
+                  type="text"
+                  id="name_vxmm_10"
+                  name="hoTen"
+                  placeholder="Họ và tên"
+                />
+                <p id="nameVal6">Bạn chưa điền họ và tên</p>
+              </div>
+              <div class="phone">
+                <input
+                  class="style-inp"
+                  type="text"
+                  id="phone_vxmm_10"
+                  name="Sdt"
+                  placeholder="Số điện thoại"
+                />
+                <p id="phoneVal6">Bạn chưa nhập số điện thoại!</p>
+              </div>
+              <div class="subm_form-2">
+                <input
+                  type="submit"
+                  name=""
+                  value="GỬI NGAY"
+                  id="submit_vxmm_10"
+                  class="res_two btn_form_top btn_form_top_gift_10 vibrate-1"
+                />
+              </div>
+              <p>Nhấn gửi ngay để nhận phần thưởng</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function showPopup() {
+      document.getElementById('wrapper_popup').style.display = 'block';
+      const name = document.getElementById('name_vxmm_10').value;
+      console.log(name);
+    }
+    function hidePopup() {
+      document.getElementById('wrapper_popup').style.display = 'none';
+    }
+
+    window.onload = function () {
+      document.getElementById('my-form').onsubmit = function () {
+        const name = document.getElementById('name_vxmm_10').value;
+        const phone = document.getElementById('phone_vxmm_10').value;
+
+        if (!name) {
+          document.getElementById('nameVal6').style.display = 'block';
+        } else {
+          document.getElementById('nameVal6').style.display = 'none';
+        }
+        if (phone === '') {
+          document.getElementById('phoneVal6').style.display = 'block';
+        } else {
+          document.getElementById('phoneVal6').style.display = 'none';
+        }
+
+        return false;
+      };
+    };
+  </script>
+</html>

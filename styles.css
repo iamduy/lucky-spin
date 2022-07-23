@@ -1,0 +1,386 @@
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 18px !important;
+  }
+}
+
+body {
+  font-family: sans-serif !important;
+  color: #000;
+  font-size: 15px;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/* css vong quay xo so */
+.top_page_rotat {
+  position: relative;
+  background-image: url(./images/bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 100px 0 80px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.title_vxmm_t7_first {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.title_vxmm_t7_second {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .right_top_colum {
+    order: 1 !important;
+    -webkit-order: 1 !important;
+  }
+  .left_top_colum,
+  .right_top_colum {
+    flex: auto !important;
+    max-width: 100% !important;
+  }
+  .turntable-bg {
+    width: 100% !important;
+  }
+  .mc_vxmm_require {
+    padding-bottom: 50px !important;
+  }
+}
+
+.right_top_colum {
+  overflow: hidden;
+  margin-bottom: 40px;
+  padding: 80px 0 20px 0;
+}
+
+.turntable-bg {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .nam-vx .pointer {
+    top: 50% !important;
+    left: 54% !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .nam-vx .pointer {
+    left: 53% !important;
+  }
+}
+.nam-vx .pointer {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* css dieu kien ap dung */
+@media only screen and (max-width: 1400px) {
+  .mc_req_container {
+    max-width: 95% !important;
+  }
+}
+
+.mc_req_container {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+.mc_vxmm_t7_require_title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+.mc_vxmm_require_row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mc_vxmm_require_content {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .mc_vxmm_require_content {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mc_vxmm_require_content {
+    flex: 0 0 50% !important;
+    max-width: 49% !important;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .mc_vxmm_require_content {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+  .im-icc img {
+    width: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .mc_vxmm_require_content {
+    margin-bottom: 18px !important;
+  }
+}
+
+.mc_vxmm_require_content {
+  flex: 0 0 20%;
+  max-width: 19%;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  /* font-family: ViettelPay; */
+  font-weight: 400;
+  padding: 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 25px;
+  font-weight: 700;
+}
+.im-icc {
+  margin-bottom: 20px;
+}
+.im-icc img {
+  width: 153px;
+}
+
+/* css popup */
+@media only screen and (max-width: 1024px) {
+  .modal_vxmm {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .bg-vxmm {
+    width: 100% !important;
+    height: auto !important;
+    padding: 15px !important;
+  }
+  .bg-vxmm .text_center-form {
+    width: 100% !important;
+    height: auto !important;
+    padding: 50px 15px !important;
+  }
+  .bg-vxmm .title-form-dk {
+    font-size: 25px;
+  }
+  .bg-vxmm .res_two {
+    margin: auto !important;
+    padding: 0 !important;
+    width: 110px !important;
+  }
+  .bg-vxmm .res_two {
+    height: 30px !important;
+  }
+}
+.modal_vxmm {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-vxmm {
+  background: #c10808;
+  background: linear-gradient(180deg, #c10808 0, #963131 100%);
+  padding: 20px;
+  border-radius: 40px;
+  width: 538px;
+  margin: auto;
+}
+.box-shadow-mc {
+  text-align: center;
+}
+
+.bg-vxmm .text_center-form {
+  position: relative;
+}
+.bg-vxmm .text_center-form {
+  background: #fff;
+  border-radius: 30px;
+  padding: 100px 50px;
+  width: 499px;
+  height: 544px;
+}
+.text_center-form {
+  color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+}
+.close-popup-vx {
+  font-size: 25px;
+  font-style: normal;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #ffce00;
+  font-weight: 700;
+  cursor: pointer;
+}
+.bg-vxmm .text_center-form > p {
+  font-style: initial;
+  font-size: 18px;
+  font-weight: 400;
+  /* font-family: ViettelPay; */
+  color: #000;
+}
+
+.bg-vxmm .title-form-dk {
+  color: #c60000;
+  font-weight: 700;
+  margin: 15px 0 20px 0;
+  line-height: 32px;
+  /* font-family: ViettelPay; */
+  font-size: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .title-form-dk {
+    font-size: 15px !important;
+    margin-bottom: 20px !important;
+  }
+  .fullname,
+  .phone {
+    margin-bottom: 10px !important;
+  }
+  .title-in {
+    display: none !important;
+  }
+  .style-inp {
+    width: 100% !important;
+    padding: 10px 10px !important;
+    font-size: 10px !important;
+  }
+  .subm_form-2 {
+    margin-top: 22px !important;
+  }
+  input.res_two.btn_form_top.vibrate-1 {
+    max-width: 150px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    height: auto !important;
+  }
+  .res_two {
+    font-size: 13px !important;
+    padding: 0 30px !important;
+  }
+}
+.title-form-dk {
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  color: #9b0000;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.fullname,
+.phone {
+  margin-bottom: 20px;
+}
+
+.title-in {
+  margin-bottom: 12px;
+}
+
+#nameVal6,
+#phoneVal6 {
+  display: none;
+  color: red;
+}
+
+.style-inp {
+  width: 100%;
+  padding: 14px 10px;
+  font-size: 15px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.subm_form-2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.bg-vxmm .res_two {
+  background-image: url(./images/bg-btn.png);
+  height: 45px;
+  width: 163px;
+  border-radius: 50px;
+}
+
+.res_two {
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: transparent;
+  border-radius: no;
+  padding: 0;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  background-image: url(../images/gui_ngay.png);
+  width: 200px;
+  height: 40px;
+  background-size: 100% auto;
+}
