@@ -128,6 +128,26 @@
           </div>
         </div>
       </div>
+
+      <!-- popup-notice -->
+      <div class="popup-notice scale-in-center">
+        <div class="notice-contain">
+          <div class="man-close"></div>
+          <div class="notice-detail">
+            <div class="done-submit">
+              <div class="close-notice" id="closeNotice">
+                <i class="mc-close"></i>
+              </div>
+              Đăng ký nhận thưởng thành công
+            </div>
+            <div class="desc-notice">
+              Cảm ơn quý khách đã tin tưởng sử dụng dịch vụ tại Viện thẩm mỹ
+              DIVA. Chúng tôi sẽ liên hệ hỗ trợ trong thời gian sớm nhất. Trân
+              trọng!
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
   <script>
@@ -138,6 +158,7 @@
     }
     function hidePopup() {
       document.getElementById('wrapper_popup').style.display = 'none';
+      window.location.reload();
     }
 
     window.onload = function () {
@@ -153,7 +174,13 @@
         if (phone === '') {
           document.getElementById('phoneVal6').style.display = 'block';
         } else {
-          document.getElementById('phoneVal6').style.display = 'none';
+          if (!/(84|0[3|5|7|8|9])+([0-9]{8})\b/g.test(phone)) {
+            document.getElementById('phoneVal6').innerHTML =
+              'Số điện thoại không đúng định dạng!';
+            document.getElementById('phoneVal6').style.display = 'block';
+          } else {
+            document.getElementById('phoneVal6').style.display = 'none';
+          }
         }
 
         return false;
